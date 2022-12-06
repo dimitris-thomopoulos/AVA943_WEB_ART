@@ -3,6 +3,167 @@
     background: #08141c;
     width: 100%;
     height: 100%;
-    top: 0;
+    bottom: 0;
     left: 0;
+    z-index: 1;
+}
+
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+    background: #08141c;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+img,svg,button,iframe,canvas,video,picture {
+    user-select: none;
+}
+
+a,h1,h2,h3,h4,h5,h6,input,button,span,p {
+    text-decoration: none;
+    font-family: 'Jura';
+}
+
+body *::selection {
+    background: #08141c;
+    color: #c498ec;
+}
+
+nav {
+    height: 100px;
+    z-index: 99999;
+    background: #ae8bcd;
+}
+
+nav > ul, nav > ul > li, nav > ul > li > a {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav > ul > li > a {
+    color: #551A8B !important;
+    font-weight: bold;
+    letter-spacing: 1.2px;
+    padding: 0 20px;
+    transition: all 0.25s ease-in-out;
+}
+
+nav > ul > li > a:hover {
+    background: #684884;
+    color: white !important;
+}
+
+header {
+    margin-top: 80px;
+}
+
+h1 {
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 7px;
+    font-size: 42px;
+    text-align: center;
+    margin: 0px 0 20px 0;
+}
+
+h1 span {
+    color: #cb9d6d;
+}
+
+h2 {
+    color: #8b5db3;
+    text-transform: uppercase;
+    letter-spacing: 7px;
+    font-size: 18px;
+    text-align: center;
+    margin: 20px 0 40px 0;
+}
+
+article {
+    margin: 120px auto;
+    max-width: 50%;
+    display: flex;
+    justfy-content: center;
+    align-items: center;
+}
+
+article h3 {
+    font-size: 25px;
+    text-transform: uppercase;
+    background: #050f15;
+    padding: 5px 10px;
+    box-shadow: -7px 7px 0 0 #8b5db354;
+    display: inline;
+    color: #ae8bcd;
+}
+
+article p {
+    color: #607289;
+    margin: 40px 0 20px 0;
+    line-height: 35px;
+    font-size: 15px;
+    display: inline-block;
+}
+
+article #left {
+    padding-right: 50px;
+}
+
+article #right {
+    padding-left: 50px;
+}
+
+article #right img {
+    display: inline;
+    transition: 1s ease-in-out;
+}
+
+article #right img:hover {
+    transform: scale(1.1);
 }
