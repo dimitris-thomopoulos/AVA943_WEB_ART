@@ -6,7 +6,7 @@ canvas.height = window.innerHeight;
 
 let drawing = false;
 
-ctx.fillStyle = 'rgb(90,180,0)';
+ctx.fillStyle = 'rgb(240,80,255)';
 
 ctx.shadowOffsetX = 0;
 ctx.shadowOffsetY = 0;
@@ -60,7 +60,7 @@ class Root {
 
             let triple = this.size * 3
             ctx.lineWidth = 0.1;
-            ctx.strokeStyle = 'rgb(20,120,0)';
+            ctx.strokeStyle = 'rgb(120,0,120)';
             ctx.strokeRect(0 - triple/2, 0 - triple/2, triple, triple);
 
             requestAnimationFrame(this.update.bind(this));
