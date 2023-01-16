@@ -6,7 +6,7 @@ canvas.height = window.innerHeight;
 
 let drawing = false;
 
-ctx.fillStyle = 'rgb(240,80,255)';
+ctx.fillStyle = 'rgba(70,50,250, 0)';
 
 ctx.shadowOffsetX = 0;
 ctx.shadowOffsetY = 0;
@@ -22,7 +22,7 @@ class Root {
         this.y = y;
         this.speedX = Math.random() * 4 - 2;
         this.speedY = Math.random() * 4 - 2;
-        this.maxSize = Math.random() * 7 + 20;
+        this.maxSize = Math.random() * 15 + 10;
         this.size = Math.random() * 1 + 2;
         this.vs = Math.random() * 0.2 + 0.5;
         this.angleX = Math.random() * 6.2;
@@ -54,13 +54,13 @@ class Root {
             ctx.fillRect(0 - this.size/2, 0 - this.size/2, this.size, this.size);
             
             let double = this.size * 2;
-            ctx.lineWidth = 0.5;
-            ctx.strokeStyle = '#3c5186';
+            ctx.lineWidth = 5;
+            ctx.strokeStyle = 'rgb(0,180,190)';
             ctx.strokeRect(0 - double/2, 0 - double/2, double, double);
 
             let triple = this.size * 3
-            ctx.lineWidth = 0.1;
-            ctx.strokeStyle = 'rgb(120,0,120)';
+            ctx.lineWidth = 0.2;
+            ctx.strokeStyle = 'rgb(0,50,230)';
             ctx.strokeRect(0 - triple/2, 0 - triple/2, triple, triple);
 
             requestAnimationFrame(this.update.bind(this));
